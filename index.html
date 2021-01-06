@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" media="all">
+    <script class='jsbin' src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="Themes/CSS/Style.css" rel="stylesheet" type="text/css" />
+    <!-- Module JS -->
+    <script src="Themes/JS/JQuery.js"></script>
+    <script src="Themes/JS/Materialize.js"></script>
+    <!-- Custom JS -->
+    <script src="Themes/JS/QGarden.js"></script>
+    <title>LMS</title>
+</head>
+
+<body ng-app="myApp" ng-controller="account">
+    <header>
+        <div class="container">
+            <div class="qgarden-header-top padding-bottom-10 padding-top-10">
+                <div class="flex-box align-items-center">
+                    <div class="social-icons">
+                        <ul class="social-icons-small">
+                            <li>
+                                <span class="follow-us-text">Theo dõi chúng tôi:</span>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="user-account">
+                        <a href="#!dangky">Đăng Nhập hoặc Đăng Ký</a>
+                    </div>
+                </div>
+            </div>
+            <div class="qgarden-search-box padding-bottom-25 padding-top-25">
+                <div class="flex-box align-items-center">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="Themes/Images/Default/Logo.png" width="140px" height="40px" />
+                        </a>
+                    </div>
+                    <div class="search-box align-items-center">
+                        <form class="flex-box">
+                            <input type="text" placeholder="Bạn tìm gì..." />
+                            <button type="button">
+                                <i class="far fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="cart-container align-items-center">
+                        <div class="cart-box">
+                            <a href="#">
+                                <i class="far fa-shopping-cart"></i>
+                                <span>20</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mb-3 shadow">
+        <nav class="bg-white navbar navbar-expand-lg navbar-light py-3 w-100">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav w-100" id="tmenu">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#!gioithieu"><i class="fas fa-info"></i> Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#!lienhe"><i class="far fa-envelope"></i> Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#!gopy"><i class="far fa-paper-plane"></i> Góp ý</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#!hoidap"><i class="fab fa-first-order-alt"></i> Hỏi đáp</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#!subjects"><i class="fab fa-codepen"></i> Trắc nghiệm</a>
+                        </li>
+                       
+            
+                        <li class="dropdown ml-3 nav-item ml-auto">
+                          <a class="btn btn-success dropdown-toggle text-white" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i> <span ng-show="!hoten">Tài khoản</span>
+            
+                            <span ng-show="hoten">{{hoten}}</span>
+                          </a>
+                          <div class="border-0 dropdown-menu shadow" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" ng-hide="hoten" href="#!dangnhap">Đăng nhập</a>
+                            <a class="dropdown-item" ng-hide="hoten" href="#!dangky">Đăng ký</a>
+                            <a class="dropdown-item" ng-hide="hoten" href="#!quenmk">Quên mật khẩu</a>
+                            <a class="dropdown-item" ng-hide="!hoten" href="#!changep">Đổi mật khẩu</a>
+                            <a class="dropdown-item" ng-hide="!hoten" href="#!profile">Cập nhật hồ sơ</a>
+                            <a class="dropdown-item" ng-hide="!hoten" ng-click="logout()">Đăng xuất</a>
+            
+                          </div>
+                        </li>
+            
+                      </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+
+        <div class="ngview" ng-view>
+        </div>
+
+        <footer class="margin-top-20 padding-top-20 border-top">
+            <div class="footer-widget">
+                <div class="footer-logo">
+                    <img src="Themes/Images/Default/Logo.png" width="140px" height="40px" />
+                </div>
+                <div class="footer-address">
+                    <h5 class="footer-block-title">Trụ Sở Tập Đoàn</h5>
+                    <p class="footer-block-content">
+                        The Luxury, Vinhomes Golden River
+                    </p>
+                </div>
+                <div class="footer-phone">
+                    <h5 class="footer-block-title">Cần Trợ Giúp?</h5>
+                    <p class="footer-block-content">Vui lòng gọi: 1-800-148-2010</p>
+                </div>
+                <div class="footer-icon">
+                    <ul>
+                        <li>
+                            <a class="icon-fb" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon-ig" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icon-yt" href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="float-right">
+                <div class="ig-image-container">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.457135362689!2d106.62435511474962!3d10.852793492269727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752a272ac90551%3A0xfdedca96b3ea5e15!2zQ8O0bmcgdmnDqm4gUGjhuqduIG3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1604718320936!5m2!1svi!2s"
+                    width="560px" height="250px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+           
+            <div class="clearfix"></div>
+            <div class="copyright">
+                <p>
+                    Copyright © <span id="Year"></span>
+                    <a href="#">WEB207</a>. All Right Reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"> </script>
+
+</html>

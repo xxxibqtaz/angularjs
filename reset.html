@@ -1,0 +1,25 @@
+<section class="QGLogin margin-bottom-40">
+    <div class="title margin-top-40 margin-bottom-20">
+        <h2>
+            Khôi Phục Lại Mật Khẩu
+        </h2>
+    </div>
+    <div class="login-container margin-bottom-40">
+        <form style="float: unset; margin: 0 auto!important;" id="DoCheckForm" class="login-form" id="dk" name="frm">
+            <h4 id="ToScroll" class="login-title">Quên Mật Khẩu</h4>
+            <div class="form-full-box margin-bottom-20">
+                <label for="EmailOrLogin">Email hoặc tên đăng nhập</label>
+                <input id="EmailOrLogin" type="text" placeholder="Email hoặc tên đăng nhập" ng-model="user" name="qmk"
+                    required>
+                <div ng-show="frm.qmk.$invalid" class="badge badge-warning mb-3">
+                    Vui lòng nhập tên tài khoản đã mất
+                </div>
+            </div>
+            <div class="form-full-box">
+                <button id="CheckReset" type="button" class="checkout-btn no-float" ng-disabled="frm.$invalid"
+                    ng-click="forgot()">Xác Nhận</button>
+            </div>
+            <div class="clearfix"></div>
+        </form>
+    </div>
+</section>

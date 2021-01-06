@@ -1,0 +1,66 @@
+<article class="w-100 px-3 pb-5">
+    <div class="card col-8 mx-auto my-5">
+        <div class="card-body">
+            <a href="" class="float-right btn btn-outline-warning" ng-click="logout()">Đăng xuất</a>
+            <h4 class="card-title mb-4 mt-1">Cập nhật hồ sơ <b class="badge badge-warning">{{hoten}}</b></h4>
+
+            <hr>
+            <form id="dk" name="frm">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                    </div>
+                    <input class="form-control" placeholder="{{username}}" type="text" value="" name="name"
+                        ng-model="editpro.hoten" required>
+
+                </div>
+                <div ng-show="frm.name.$invalid" class="badge badge-warning mb-3">
+                    Tên người dùng không để trống
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                    </div>
+                    <input name="email" class="form-control" placeholder="{{email}}" type="email" value=""
+                        ng-model="editpro.email" required>
+
+                </div>
+                <div ng-show="frm.email.$invalid" class="badge badge-warning mb-3">
+                    Example: abc@xyz
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                    </div>
+
+                    <input name="sdt" class="form-control" placeholder="{{sdt}}" type="number" value=""
+                        ng-model="editpro.sdt" required>
+
+                </div>
+                <div ng-show="frm.sdt.$invalid" class="badge badge-warning mb-3">
+                    Số điện thoại ít nhất 10 số
+                </div>
+
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-birthday-cake"></i> </span>
+                    </div>
+
+                    <input name="birthday" class="form-control" placeholder="{{birthday}}" type="text" value=""
+                        ng-model="editpro.birthday" required>
+
+                </div>
+                <div ng-show="frm.birthday.$invalid" class="badge badge-warning mb-3">
+                    Sinh nhật không được để trống
+                </div>
+
+
+                <div class="form-group">
+                    <button class="btn btn-warning btn-block" ng-disabled="frm.$invalid" type="submit"
+                        ng-click="update()">Cập nhật</button>
+                </div> <!-- form-group// -->
+
+            </form>
+        </div>
+    </div>
+</article>
