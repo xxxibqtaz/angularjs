@@ -1,0 +1,88 @@
+<section class="QGLogin margin-bottom-40">
+    <div class="login-container">
+        <form class="login-form margin-top-40" id="dk" name="frm1">
+            <h4 id="ToScroll" class="login-title">Đăng nhập</h4>
+            <div class="form-full-box margin-bottom-20">
+                <label for="EmailOrLogin">Email hoặc tên đăng nhập</label>
+                <input id="EmailOrLogin" type="text" placeholder="Email hoặc tên đăng nhập" ng-model="u" name="user"
+                    ng-pattern="/^[a-zA-Z0-9-]*$/" required>
+                <div ng-show="frm1.user.$invalid" class="badge badge-warning mb-3">
+                    Tên tài khoản bắt buộc, không dấu
+                </div>
+            </div>
+
+
+            <div class="form-full-box margin-bottom-20">
+                <label for="LoginPass">Mật khẩu</label>
+                <input placeholder="Mật khẩu của bạn" type="password" ng-model="p" name="pass" required>
+                <div ng-show="frm1.pass.$invalid" class="badge badge-warning mb-3">
+                    Mật khẩu bắt buộc
+                </div>
+            </div>
+
+
+            <div class="form-mid-box margin-bottom-20">
+                <div class="check-box">
+                    <input type="checkbox" name="SavePortal" id="Remember">
+                    <label for="Remember">Lưu đăng nhập</label>
+                </div>
+            </div>
+
+            <div class="form-mid-box no-mar form-mid-box-right">
+                <a class="link-full" href="#!quenmk">Quên mật khẩu?</a>
+            </div>
+            <span class="badge badge-warning mb-3 tbaosaimk"></span>
+
+            <div class="form-full-box">
+                <button id="DoLogin" type="button" class="checkout-btn no-float" ng-disabled="frm1.$invalid"
+                    ng-click="login()">Đăng nhập</button>
+            </div>
+        </form>
+        <form class="login-form margin-top-40" id="dk" name="frm">
+            <h4 id="ToScroll" class="login-title">Đăng ký</h4>
+            <div id="ErrorBox" class="alert alert-danger"></div>
+            <div class="form-full-box margin-bottom-20">
+                <label for="Login">Tên đăng nhập*</label>
+                <input type="text" placeholder="Tên tài khoản" ng-model="editpro.username" name="user"
+                    ng-pattern="/^[a-zA-Z0-9-]*$/" required>
+                <div ng-show="frm.user.$invalid" class="badge badge-warning mb-3">
+                    Tên tài khoản bắt buộc, không dấu
+                </div>
+            </div>
+            <div class="form-full-box margin-bottom-20">
+                <label for="Mail">Địa chỉ mail*</label>
+                <input placeholder="Địa chỉ email" type="email" ng-model="editpro.email" name="email" required>
+                <div ng-show="frm.email.$invalid" class="badge badge-warning mb-3">
+                    Email bắt buộc
+                </div>
+            </div>
+            <div class="form-full-box margin-bottom-20">
+                <label for="FullName">Họ và tên*</label>
+                <input type="text" placeholder="Họ và tên" ng-model="editpro.hoten" name="name" required>
+                <div ng-show="frm.name.$invalid" class="badge badge-warning mb-3">
+                    Họ và tên bắt buộc
+                </div>
+            </div>
+            <div class="form-full-box margin-bottom-20">
+                <label for="Phone">Số điện thoại*</label>
+                <input placeholder="Số điện thoại" type="text" ng-model="editpro.sdt" name="sdt" ng-minlength="10"
+                    required>
+                <div ng-show="frm.sdt.$invalid" class="badge badge-warning mb-3">
+                    Số điện thoại bắt buộc, ít nhất 10 số
+                </div>
+            </div>
+            <div class="form-full-box margin-bottom-20">
+                <label for="Pass">Mật khẩu*</label>
+                <input placeholder="Tạo mật khẩu" type="password" ng-model="editpro.password" name="pass" required>
+
+                <div ng-show="frm.pass.$invalid" class="badge badge-warning mb-3">
+                    Mật khẩu bắt buộc
+                </div>
+            </div>
+                <div class="form-full-box">
+                    <button type="button" id="DoRegister"  ng-disabled="frm.$invalid" ng-click="signup()" class="checkout-btn no-float">Register</button>
+                </div>
+        </form>
+        <div class="clearfix"></div>
+    </div>
+</section>

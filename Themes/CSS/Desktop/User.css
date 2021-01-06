@@ -1,0 +1,224 @@
+.UserAccount
+{
+    width: 100%;
+}
+
+.user-account-nav
+{
+    width: 25%;
+    float: left;
+    flex-wrap: wrap;
+    padding-left: 0;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: left;
+    line-height: 20px;
+    font-style: normal;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.user-account-nav > a
+{
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    font-style: normal;
+    line-height: inherit;
+    text-decoration: none;
+    color: #333!important;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    padding: 15px 15px 13px;
+    text-transform: uppercase;
+    transition: all .3s ease 0s;
+    background-color: transparent;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.user-account-nav > a.active, .user-account-nav > a:hover
+{
+    color: #fff!important;
+    background-color: #3a9943;
+}
+
+.user-account-nav > a:not(:last-child)
+{
+    border-bottom: none!important;
+}
+
+.account-tab-content
+{
+    width: 72%;
+    float: left;
+    color: #333;
+    margin-left: 3%;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 20px;
+    font-style: normal;
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.account-tab-content > .fade
+{
+    display: none;
+    visibility: hidden;
+}
+
+.account-tab-content > .active
+{
+    display: block;
+    visibility: visible;
+}
+
+.tab-pane
+{
+    color: #333;
+    padding: 30px;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    background-color: #fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.tab-pane > .myaccount-content
+{
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.myaccount-content a
+{
+    color: #333!important;
+    transition: all 0.3s!important;
+}
+
+.myaccount-content a:hover
+{
+    color: #3a9943!important;
+}
+
+.myaccount-content > h3, .myaccount-content h4
+{
+    color: #333;
+    margin-top: 0;
+    font-size: 24px;
+    text-align: left;
+    font-weight: 600;
+    line-height: 30px;
+    font-style: normal;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.myaccount-content h4
+{
+    border: none;
+}
+
+.myaccount-content .checkout-btn
+{
+    float: none;
+    margin: 0!important;
+    margin-top: 20px!important;
+}
+
+.current-info
+{
+    width: 100%;
+}
+
+.current-info > .avatar-box
+{
+    width: 25%;
+    float: left;
+    margin-right: 5%;
+}
+
+.avatar-box > .user-avatar-box
+{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.user-avatar-box > img
+{
+    width: 100%;
+    height: auto;
+    max-width: 205px;
+    max-height: 205px;
+    border-radius: 100%;
+}
+
+.current-info > .user-info-box
+{
+    width: 70%;
+    float: left;
+}
+
+.user-info-box > h4
+{
+    width: 100%;
+}
+
+.user-info-box > .box-info
+{
+    width: 100%;
+    padding-left: 25px;
+    box-sizing: border-box;
+}
+
+.user-info-box > h4
+{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0!important;
+    text-transform: capitalize;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#btn-avatar, .btn-upload
+{
+    margin: 0;
+    width: 100%;
+    color: #333;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 8px 15px;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#btn-avatar:hover, .btn-upload:hover
+{
+    color: #fff;
+    background-color: #3a9943;
+}

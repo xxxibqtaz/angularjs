@@ -1,0 +1,737 @@
+.QGProductInfo
+{
+    float: left;
+    width: 100%;
+}
+
+.product-img-box
+{
+    float: left;
+    margin-right: 20px;
+    box-sizing: border-box;
+    width: calc(45% - 20px);
+}
+
+.img-big-box
+{
+    width: 100%;
+    object-fit: cover;
+    max-height: 700px;
+}
+
+.img-big-box img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-list-box
+{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.img-list-box img
+{
+    width: 24%;
+    float: left;
+    height: 100%;
+    margin-right: 1.33%;
+    transition: all 0.1s;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.img-list-box img#active, .img-list-box img:hover
+{
+    border: 1px solid #3a9943;
+}
+
+.img-list-box img:last-child
+{
+    margin-right: 0;
+}
+
+.product-detail-box
+{
+    width: 55%;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #dee2e6;
+}
+
+.product-info-title
+{
+    color: #333;
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 30px;
+    font-style: normal;
+    visibility: visible;
+    box-sizing: border-box;
+    margin-bottom: 15px!important;
+}
+
+.product-detail-content .detail-rated-star
+{
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.product-detail-content .total-rate
+{
+    display: inline-block;
+}
+
+.total-rate a
+{
+    transition: all 0.3s;
+    color: #333!important;
+}
+
+.total-rate:hover a
+{
+    color: #3a9943!important;
+}
+
+.product-detail-content .product-price
+{
+    cursor: default;
+    margin-top: 10px;
+}
+
+.product-price .discounted-price
+{
+    color: #3a9943;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 45px;
+    font-style: normal;
+    margin-right: 10px;
+    box-sizing: border-box;
+    transition: all .1s ease 0s;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.product-price .price
+{
+    color: #868686;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 30px;
+    font-style: normal;
+    visibility: visible;
+    box-sizing: border-box;
+    transition: all .1s ease 0s;
+    text-decoration: line-through;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.product-info-block
+{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.single-info
+{
+    width: 100%;
+}
+
+.single-info .title
+{
+    color: #666;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 24px;
+    font-style: normal;
+    box-sizing: border-box;
+    transition: all .1s ease 0s;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.single-info .value, .single-info a
+{
+    color: #3a9943;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 24px;
+    font-style: normal;
+    box-sizing: border-box;
+    transition: all .1s ease 0s;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.available
+{
+    color: #3a9943!important;
+}
+
+.available:after
+{
+    content: "Còn Hàng";
+}
+
+.unavailable
+{
+    color: #fe0000!important;
+}
+
+.unavailable:after
+{
+    content: "Tạm Hết Hàng";
+}
+
+.product-short-desc
+{
+    color: #666;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 30px;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.quantity
+{
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.quantity-title
+{
+    color: #222;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 48px;
+    margin-right: 20px;
+    font-style: normal;
+    box-sizing: border-box;
+    transition: all .1s ease 0s;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.pro-qty
+{
+    color: #333;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    margin-right: 15px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.pro-qty > input
+{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: visible;
+    font-size: inherit;
+    padding-left: 20px;
+    padding-right: 25px;
+    line-height: inherit;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: all .1s ease 0s;
+}
+
+.pro-qty > a.inc, .pro-qty > a.dec
+{
+    width: 20px;
+    height: 20px;
+    color: inherit;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 20px;
+    font-style: normal;
+    position: absolute;
+    text-align: center;
+    font-weight: normal;
+    visibility: visible;
+    display: inline-block;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all .1s ease 0s;
+    border-left: 1px solid #ddd;
+    background-color: transparent;
+    border-bottom: 1px solid #ddd;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.pro-qty > a.inc
+{
+    top: 0;
+    right: 0;
+}
+
+.pro-qty > a.dec
+{
+    right: 0;
+    bottom: 0;
+    border-bottom: none;
+}
+
+.pro-qty > a:hover
+{
+    color: #3a9943!important;
+}
+
+.product-cart-button
+{
+    margin: 0;
+    color: #fff;
+    border: none;
+    padding: 0 70px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    overflow: visible;
+    line-height: 41px;
+    border-radius: 5px;
+    text-align: center;
+    transition: all .3s;
+    text-transform: none;
+    display: inline-block;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: #67c570;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.product-cart-button:hover
+{
+    background-color: #3a9943;
+}
+
+.wishlist-button
+{
+    width: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.wishlist-button a
+{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 30px;
+    transition: all 0.3s;
+    color: #666!important;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.wishlist-button a:hover
+{
+    color: #3a9943!important;
+}
+
+.social-share-buttons
+{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.social-share-buttons ul li a
+{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #dee2e6;
+}
+
+.social-share-buttons a:hover
+{
+    color: #fff!important;
+}
+
+
+a.twitter
+{
+    color: #1da1f2!important;
+}
+
+a.twitter:hover
+{
+    background-color: #1da1f2;
+}
+
+a.facebook
+{
+    color: #4867aa!important;
+}
+
+a.facebook:hover
+{
+    background-color: #4867aa;
+}
+
+a.google-plus
+{
+    color: #dd5144!important;
+}
+
+a.google-plus:hover
+{
+    background-color: #dd5144;
+}
+
+a.pinterest
+{
+    color: #bd081b!important;
+}
+
+a.pinterest:hover
+{
+    background-color: #bd081b;
+}
+
+.nav-flex-tab
+{
+    color: #333;
+    display: flex;
+    font-size: 15px;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-align: left;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    box-sizing: border-box;
+    justify-content: center;
+    border-bottom: 1px solid #dee2e6;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.nav-flex-tab a
+{
+    color: #a9a9a9!important;
+    margin-bottom: -1px!important;
+}
+
+.nav-flex-tab a:hover
+{
+    color: #333!important;
+}
+
+a#description-tab, a#review-tab
+{
+    display: block;
+    font-size: 20px;
+    padding: 13px 0;
+    text-align: left;
+    font-weight: 600;
+    line-height: 30px;
+    font-style: normal;
+    margin: 0 50px 0 0;
+    box-sizing: border-box;
+    transition: all .1s ease 0s;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+a.active-tab
+{
+    color: #333!important;
+    border-bottom: 2px solid #3a9943!important;
+}
+
+.desc-content, .review-content
+{
+    display: block;
+    color: #333!important;
+}
+
+.tab-box
+{
+    width: 100%;
+    padding: 20px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.tab-box p
+{
+
+    color: #666;
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 24px;
+    font-style: normal;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.deactivate
+{
+    visibility: hidden;
+    display: none!important;
+}
+
+.pro-avg-ratting
+{
+
+    color: #333;
+    width: 100%;
+    float: left;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 20px;
+    font-style: normal;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.pro-avg-ratting h4
+{
+    margin: 0;
+}
+
+.pro-avg-ratting h4 span
+{
+    margin-left: 10px;
+}
+
+.pro-avg-ratting h4 span, .pro-avg-ratting span
+{
+    color: #333;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 8px;
+    font-style: normal;
+    box-sizing: border-box;
+    transition: all .1s ease 0s;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.ratting-list
+{
+    width: 100%;
+}
+
+.ratting-list .detail-rated-star
+{
+    margin-bottom: 0;
+    margin-right: 20px;
+    width: max-content;
+    display: inline-block;
+}
+
+.user-rating-box, .user-rating
+{
+    float: left;
+    width: 100%;
+    min-height: 100px;
+}
+
+.user-rating
+{
+    display: flex;
+    min-height: 100px;
+}
+
+.avatar-container
+{
+    flex: 1;
+    width: 140px;
+}
+
+.user-rating .user-avatar
+{
+    width: 100%;
+    float: left;
+    height: 100%;
+    min-height: 100px;
+    position: relative;
+    display: inline-block;
+}
+
+.user-avatar img
+{
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    object-fit: fill;
+    position: absolute;
+    border-radius: 100%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.user-rating .user-rating-content
+{
+    float: left;
+    height: inherit;
+    min-height: 100px;
+    box-sizing: border-box;
+    width: calc(100% - 140px);
+}
+
+.rating-author
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.rating-author .ratting-star
+{
+    display: inline-block!important;
+}
+
+.rating-author h3
+{
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 20px;
+    margin: 0 15px 0 0;
+    font-style: normal;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.add-a-comment
+{
+    float: left;
+    width: 100%;
+}
+
+.add-a-comment h3
+{
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 30px;
+    text-align: left;
+    line-height: 16px;
+    font-style: normal;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.add-a-comment h5
+{
+    color: #333;
+    float: left;
+    margin-top: 0;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 600;
+    line-height: 18px;
+    margin-right: 10px;
+    font-style: normal;
+    margin-bottom: .5rem;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#star-hover-one:hover
+{
+    color: #ffdd20!important;
+}
+
+#star-hover > i.fill-click
+{
+    color: #ffdd20!important
+}
+
+.add-a-comment form
+{
+    width: 100%;
+    float: left;
+}
+
+.rating-box
+{
+    float: left;
+    width: 100%;
+    display: block;
+}
+
+.form-mid-box ::placeholder, .form-full-box ::placeholder
+{
+    color: #666;
+}
+
+.form-mid-box > label, .form-full-box > label
+{
+    color: #666;
+    display: block;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    margin-bottom: 3px;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.form-mid-box > input, .form-full-box > textarea, .form-full-box input, .form-mid-box > select
+{
+
+    margin: 0;
+    width: 100%;
+    color: #666;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 8px 15px;
+    overflow: visible;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.form-mid-box > select
+{
+    height: 42px;
+    padding: 8px 15px;
+}
+
+.form-full-box > textarea
+{
+    resize: none;
+    height: 120px;
+    overflow: auto;
+}

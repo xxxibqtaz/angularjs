@@ -1,0 +1,488 @@
+.title h2
+{
+    margin: 0;
+    font-size: 27px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.title h2:after
+{
+    left: 0;
+    bottom: 0;
+    width: 65px;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background: #3a9943;
+}
+
+.product-container
+{
+    width: 23%;
+    float: left;
+    height: 390px;
+    overflow: hidden;
+    margin-right: 2.666%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.product-container:nth-of-type(5n)
+{
+    margin-right: 0;
+}
+
+.product-container .product-detail
+{
+    width: 100%;
+    height: 105px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #f0f0f0;
+}
+
+.product-container .product-img
+{
+    width: 100%;
+    float: left;
+    height: 265px;
+    position: relative;
+}
+
+.product-img img:not(#DiscountLabel)
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    float: left;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.product-img span.discount-label
+{
+    top: 20px;
+    left: 20px;
+    width: 59px;
+    color: #fff;
+    height: 23px;
+    z-index: 100;
+    object-fit: cover;
+    position: absolute;
+    padding-left: 10px;
+    display: inline-block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("../../Images/Icons/Discount.png");
+}
+
+.product-img
+{
+    box-sizing: border-box;
+    border: 1px solid rgba(240, 240, 240, 0.3);
+    border-bottom: none!important;
+}
+
+.product-img:hover
+{
+    cursor: pointer;
+}
+
+.product-detail
+{
+    padding-top: 15px;
+    padding-left: 15px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.detail-title, .detail-rated-star
+{
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+
+.detail-title:hover
+{
+    color: #3a9943;
+}
+
+.detail-price
+{
+    width: 100%;
+    cursor: default;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.detail-price .price-amount-mini
+{
+    color: #3a9943;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-right: 10px;
+}
+
+.detail-price .price-before-sale
+{
+    color: #868686;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 18px;
+    text-decoration: line-through;
+}
+
+.add-cart-icon
+{
+    top: 60%;
+    left: 75%;
+    position: absolute;
+    transform: translateY(-60%);
+}
+
+.add-cart-icon:hover a
+{
+    color: #fff;
+    background: #3a9943;
+}
+
+.add-cart-icon:hover a i
+{
+    color: #fff;
+}
+
+.add-cart-icon a
+{
+    width: 36px;
+    height: 36px;
+    display: block;
+    text-align: center;
+    background: #f2f2f2;
+    transition: all 0.3s;
+    border-radius: 100% 100%;
+}
+
+.add-cart-icon a i
+{
+    color: #000;
+    margin-top: 50%;
+    font-size: 16px;
+    transition: all 0.3s;
+    transform: translateY(-50%);
+}
+
+.product-icon-hover
+{
+    top: 80%;
+    right: 0;
+    opacity: 0;
+    z-index: 100;
+    position: absolute;
+    visibility: hidden;
+    transition: all 500ms;
+    transform: translateY(-80%);
+}
+
+.product-icon-hover .icon-position
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.product-icon-hover ul
+{
+    width: 36px;
+    height: 108px;
+    padding: 5px;
+}
+
+.product-img:hover .product-icon-hover
+{
+    opacity: 1;
+    right: 15px;
+    visibility: visible;
+}
+
+.product-icon-hover ul li a
+{
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.product-icon-hover ul
+{
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.product-icon-hover ul li a i
+{
+    color: #000;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 100%;
+    transition: all 0.6s;
+    display: inline-block;
+    background-color: #fff;
+}
+
+.product-icon-hover ul li a:hover i
+{
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: #3a9943;
+}
+
+.new-product-banner
+{
+    margin: 0;
+    width: 40%;
+    float: left;
+    height: 760px;
+    position: relative;
+    display: inline-block;
+}
+
+.new-product-banner img
+{
+    top: 50%;
+    left: 50%;
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: all 0.3s;
+    transform: translate(-50%, -50%);
+}
+
+.new-product-banner:hover img
+{
+    opacity: 0.85;
+}
+
+.new-product
+{
+    float: left;
+    max-height: 780px;
+    margin-left: 15px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: calc(60% - 15px);
+}
+
+.new-product .product-container
+{
+    width: 32%;
+    margin-right: 2%;
+}
+
+.new-product .product-container:nth-child(3n)
+{
+    margin-right: 0!important;
+}
+
+.banner-content
+{
+    width: 35%;
+    float: left;
+    height: 425px;
+    display: block;
+    position: relative;
+}
+
+a.button-link
+{
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+    padding: 0 20px;
+    font-weight: 700;
+    line-height: 50px;
+    border-radius: 5px;
+    font-style: normal;
+    text-align: center;
+    visibility: visible;
+    display: inline-block;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #3a9943!important;
+    border: 1px solid #3a9943;
+}
+
+a:hover.button-link
+{
+    color: #fff!important;
+    background-color: #3a9943;
+    border: 1px solid #3a9943;
+}
+
+.banner-link
+{
+    width: 63%;
+    float: right;
+    height: 100%;
+    margin-left: 2%;
+}
+
+.banner-link a img
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    max-height: 425px;
+}
+
+.full-content
+{
+    left: 0;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.full-content h5
+{
+    margin-top: 0;
+    color: #3a9943;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    visibility: visible;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+.full-content h4
+{
+    color: #333;
+    margin-top: 0;
+    font-size: 35px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 35px;
+    font-style: normal;
+    visibility: visible;
+    margin-bottom: .5rem;
+    box-sizing: border-box;
+}
+
+.full-content h3
+{
+    color: #333;
+    margin-top: 0;
+    font-size: 60px;
+    text-align: left;
+    font-weight: 500;
+    line-height: 60px;
+    font-style: normal;
+    visibility: visible;
+    margin-bottom: .5rem;
+    box-sizing: border-box;
+}
+
+.full-content p
+{
+    color: #666;
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 20px;
+    font-style: normal;
+    margin-bottom: 40px;
+    visibility: visible;
+    box-sizing: border-box;
+}
+
+.QGCategory .product-container, .QGCategory .product-container .product-img
+{
+    height: 340px;
+}
+
+.QGCategory .product-img img
+{
+    transition: all 0.6s;
+}
+
+.QGCategory .product-img:hover img
+{
+    opacity: 0.8;
+}
+
+.QGCategory .category-img-info
+{
+    left: 50%;
+    width: 80%;
+    bottom: 20px;
+    position: absolute;
+    text-align: center;
+    border-radius: 5px;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.category-img-info > h5
+{
+    margin-top: 14px!important;
+}
+
+.category-img-info  .category-title
+{
+    margin-top: 0;
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: 600;
+    user-select: none;
+    line-height: 18px;
+    font-style: normal;
+    text-align: center;
+    visibility: visible;
+    box-sizing: border-box;
+}
+
+.category-title .quantity
+{
+    color: #333;
+    margin-top: 0;
+    font-size: 15px;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 20px;
+    user-select: none;
+    font-style: normal;
+    text-align: center;
+    visibility: visible;
+    box-sizing: border-box;
+}
+
+.category-img-info  .category-title a
+{
+    color: #333;
+    transition: all 0.3s;
+}
+
+.category-img-info .category-title:hover a
+{
+    color: #3a9943;
+}

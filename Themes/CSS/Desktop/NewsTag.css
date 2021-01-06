@@ -1,0 +1,123 @@
+.post-content
+{
+    object-fit: fill;
+}
+
+.post-content blockquote
+{
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 26px;
+    font-style: italic;
+    padding: 30px 45px;
+    background: #f6f6f6;
+    box-sizing: border-box;
+    margin: 40px 0 40px 40px;
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid #3a9943;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.post-content p
+{
+    color: #333;
+    margin-top: 0;
+    font-size: 15px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 29px;
+    font-style: normal;
+    visibility: visible;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.post-content img
+{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto 40px;
+}
+
+.blog-single-post-container .social-share-buttons
+{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.blog-single-post-container div.social-share-buttons > h3
+{
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.blog-single-post-container div.social-share-buttons
+{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.blog-single-post-container .social-share-buttons ul > li > a
+{
+    border-radius: 100%;
+}
+
+.blog-single-post-container .review-content p
+{
+    color: #666;
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 24px;
+    font-style: normal;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.blog-single-post-container .reply-btn
+{
+    color: #333;
+    float: right;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 20px;
+    font-style: normal;
+    box-sizing: border-box;
+    transition: all .1s ease 0s;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.reply-btn
+{
+    cursor: pointer;
+}
+
+.reply-btn > a
+{
+
+    color: #3a9943;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: left;
+    font-style: normal;
+    border-radius: 50px;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: all .2s ease 0s;
+    background-color: transparent;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.user-rating-box > .user-rating-box
+{
+    width: 90%;
+    margin-left: 10%;
+}

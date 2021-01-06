@@ -1,0 +1,177 @@
+.qgarden-header-top
+{
+    border-bottom: 1px solid rgba(255, 255, 255, .20);
+}
+
+.follow-us-text
+{
+    color: #fff;
+    display: inline-block;
+}
+
+.social-icons
+{
+    width: 50%;
+    float: left;
+}
+
+.user-account
+{
+    width: 50%;
+    float: right;
+    text-align: right;
+    display: inline-block;
+}
+
+form.flex-box input, form.flex-box button
+{
+    color: #fff;
+    height: 40px;
+    border: none;
+    display: flex;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, .25);
+}
+
+form.flex-box input
+{
+    width: 90%;
+    padding-left: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+form.flex-box button
+{
+    width: 10%;
+    cursor: pointer;
+    font-size: 22px;
+    transition: all 0.5s;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+form.flex-box button:hover
+{
+    color: #ffdd20;
+}
+
+form.flex-box button i
+{
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.search-box
+{
+    width: 50%;
+    margin-left: 13%;
+}
+
+.cart-container
+{
+    float: right;
+    margin-left: auto;
+    display: inline-block;
+}
+
+.cart-box
+{
+    width: 75px;
+    height: 40px;
+    float: right;
+    position: relative;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, .20);
+}
+
+.cart-box a
+{
+    margin-left: 10%;
+}
+
+.cart-box i
+{
+    height: 40px;
+    font-size: 28px;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.cart-box span
+{
+    top: 1%;
+    color: #000;
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 100% 100%;
+    transform: translateY(50%);
+}
+
+.social-icons-small a i
+{
+    transition: all 0.5s;
+}
+
+.social-icons-small a:hover i
+{
+    color: #ffdd20;
+}
+
+
+.nav-box li
+{
+    width: 80px;
+    height: 60px;
+    margin-right: 50px;
+    display: inline-block;
+}
+
+.nav-box li.active > a
+{
+    color: #3a9943!important;
+}
+
+.nav-box li a:hover
+{
+    color: #3a9943!important;
+}
+
+.nav-box a
+{
+    height: 60px;
+    text-align: center;
+    display: table-cell;
+    transition: all 0.5s;
+    color: #000!important;
+    vertical-align: middle;
+}
+
+.nav-box li.menu-has-submenu ul
+{
+    float: left;
+    width: 240px;
+    display: none;
+    transition: all 0.5s;
+}
+
+.nav-box li.menu-has-submenu ul li
+{
+    overflow: hidden;
+    padding-left: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.nav-box li.menu-has-submenu:hover ul
+{
+    float: left;
+    z-index: 100;
+    display: inline-block;
+    background-color: #fff;
+}

@@ -1,0 +1,26 @@
+
+<article class="w-100 px-3">
+    <div class="mt-3 row row-cols-1 row-cols-md-3">
+    
+      
+        <div class="col mb-4 text-center"  ng-repeat="item in list_subject | limitTo:6:start">
+                    <div class="card h-100 prod" >
+                    <img src="images/logos/{{item.Logo}}" class="card-img-top m-auto pt-3 w-50" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">{{item.Id}}</h5>
+                        <p class="card-text">{{item.Name}}</p>
+                      </div>
+                      <div class="card-footer font-weight-bold text-center">
+                        <a href="#!quiz/{{item.Id}}/{{item.Name}}">  <button class="btn btn-info rounded-pill w-75"><i class="fas fa-bolt"></i> Quiz</button></a>
+                      </div>
+                    </div>
+                  </div>
+                  
+    
+                </div></article><div class="bg-dark ng-scope p-3 text-center w-100">
+                  <button ng-click="first()" class="btn btn-success mx-3"><i class="fas fa-step-backward"></i> Trang
+                      đầu</button>
+                  <button ng-click="prev()" class="btn btn-danger mx-3"> <i class="fas fa-backward"></i> Trang trước</button>
+                  <button ng-click="next()" class="btn btn-info mx-3">Trang kế <i class="fas fa-forward"></i></button>
+                  <button ng-click="last()" class="btn btn-warning mx-3">Trang cuối <i class="fas fa-step-forward"></i></button>
+              </div>

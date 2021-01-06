@@ -1,0 +1,35 @@
+<article class="w-100 px-3 pb-5">
+
+    <div class="card col-8 mx-auto mt-5">
+        <div class="card-body">
+            <a href="" class="float-right btn btn-outline-warning" ng-hide="!hoten" ng-click="logout()">Đăng xuất</a>
+            <h4 class="card-title mb-4 mt-1">Đổi mật khẩu <span ng-show="hoten" class="badge badge-warning">{{username}}</span></h4>
+            
+            <hr>
+            <form id="dk" name="frm">
+                  
+            <div class="form-group">
+                <input  class="form-control" placeholder="Nhập mật khẩu cũ"  type="password" ng-model="passold" name="mkc" required>
+                <div ng-show="frm.mkc.$invalid" class="badge badge-warning">
+                    Vui lòng nhập mật khẩu cũ
+                </div>
+            </div> <!-- form-group// -->
+            <div class="form-group">
+                <input class="form-control" placeholder="Nhập mật khẩu mới" type="password" ng-model="passnew" name="passnew" required>
+                <div ng-show="frm.passnew.$invalid" class="badge badge-warning">
+                    Vui lòng nhập mật khẩu mới
+                </div>
+            </div>
+                               
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-warning btn-block"  ng-disabled="frm.$invalid" ng-click="changep()">Đổi mật khẩu</button>
+                    </div> <!-- form-group// -->
+                </div>
+                                                            
+            </div>                                                             
+        </form>
+    </div>
+        </div>
+    </article>
